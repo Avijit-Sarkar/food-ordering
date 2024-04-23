@@ -1,5 +1,3 @@
-import FlyingButton from "react-flying-item";
-
 export default function AddToCartButton({
   hasSizesOrExtras,
   onClick,
