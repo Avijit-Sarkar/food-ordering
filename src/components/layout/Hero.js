@@ -5,12 +5,20 @@ import { useEffect, useState } from "react";
 
 export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = ["/pizza.png", "/pizza-2.png", "/cheese-stick.webp"]; // Add more image paths as needed
+  const images = [
+    "/pizza.png",
+    "/pasta.png",
+    "/cheese-stick.webp",
+    "/pepsi.png",
+    "/salad.png",
+    "/soup.png",
+    "/pizza-2.png",
+  ]; // Add more image paths as needed
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 7000); // Change slide every 5 seconds
+    }, 5000); // Change slide every 5 seconds
 
     return () => clearInterval(interval);
   }, [images.length]);
