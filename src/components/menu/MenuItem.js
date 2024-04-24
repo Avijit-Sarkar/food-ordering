@@ -112,12 +112,13 @@ export default function MenuItem(menuItem) {
                   ))}
                 </div>
               )}
-              <div
-                className="primary sticky bottom-2"
+              <button
+                type="button"
+                className="mt-4 bg-primary text-white rounded-full px-8 py-2"
                 onClick={handleAddToCartButtonClick}
               >
                 Add to cart ${selectedPrice}
-              </div>
+              </button>
               <button className="mt-2" onClick={() => setShowPopup(false)}>
                 Cancel
               </button>
