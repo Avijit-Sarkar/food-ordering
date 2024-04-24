@@ -35,7 +35,7 @@ export default function MenuItem(menuItem) {
       });
     }
   }
-
+  // cart
   let selectedPrice = basePrice;
   if (selectedSize) {
     selectedPrice += selectedSize.price;
